@@ -1,3 +1,5 @@
+sudo dnf update --assumeyes
+
 packages=(
 	mako                    # notifications
 	wpctl                   # Volume media buttons
