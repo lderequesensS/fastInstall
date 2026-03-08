@@ -1,0 +1,24 @@
+packages=(
+	mako                    # notifications
+	wpctl                   # Volume media buttons
+	playerctl               # media buttons
+	brightnessctl           # laptop brightness
+	network-manager-applet  # network applet
+	blueman                 # bluetooth applet
+	pavucontrol             # Ui to handle volume controls
+	grim                    # For screenshots
+	slurp                   # For screenshots
+	swappy                  # For screenshots
+)
+
+sudo dnf install --assumeyes "${packages[@]}"
+
+flatpackages=(
+	app.zen_browser.zen
+	com.brave.Browser
+	com.github.tchx84.Flatseal
+	com.usebottles.bottles
+	md.obsidian.Obsidian
+)
+
+flatpak install flathub --assumeyes "${flatpackages[@]}"

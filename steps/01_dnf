@@ -1,0 +1,1 @@
+sudo dnf config-manager setopt max_parallel_downloads=10 fastestmirror=True assumeyes=True
